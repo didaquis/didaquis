@@ -1,5 +1,5 @@
 # general configuration
-url: http://excentris.net
+url: didaquis.github.io
 baseurl: ''
 
 # compass configuration
@@ -19,6 +19,7 @@ compass:
   # Tracking Code to that file.
   include_analytics: false
   description: "A personal website of a web developer"
+  location: "Barcelona - Terrassa"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
