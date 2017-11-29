@@ -5,7 +5,6 @@ baseurl: ''
 # compass configuration
 compass:
   # an avatar or logo (optional)
-  #logo: "/images/compass.png"
   logo: "/images/portrait.jpg"
   # author will appear under the avatar (optional)
   author: "Dídac García"
