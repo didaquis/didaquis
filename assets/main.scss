@@ -6,16 +6,17 @@ $anchor-text-color: #CE534D;
 $background-color: #F1EED9;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Roboto Mono', monospace;
 	color: $text-color;
 	background-color: $background-color;
 }
 
 header,
 main {
-	padding: 0 10px;
 	margin-bottom: 30px;
+	padding: 0 14px;
 }
+
 
 h2 {
 	margin-top: 20px;
@@ -109,13 +110,6 @@ footer {
 	height: 20px;
 }
 
-.poweredby {
-	font-family: "Arial Narrow", Arial;
-	font-size: 0.6em;
-	line-height: 0.6em;
-	padding: 0 5px;
-}
-
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
@@ -128,10 +122,8 @@ footer {
 
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
 	.wrapper {
-		width: 680px;
+		width: 744px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
