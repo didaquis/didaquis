@@ -17,7 +17,7 @@ compass:
   # be added at the end of the <head> section. You can add your Google Analytics
   # Tracking Code to that file.
   include_analytics: false
-  description: "A personal website of a web developer"
+  description: "My name is Dídac and I'm a full stack web developer"
   location: "Barcelona - Terrassa"
 
 # exclude
