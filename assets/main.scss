@@ -11,12 +11,14 @@ body {
 	background-color: $background-color;
 }
 
-header,
-main {
-	margin-bottom: 30px;
-	padding: 0 14px;
+header {
+	margin-bottom: 36px;
+	padding: 10px 14px 0 14px;
 }
 
+main {
+	margin-bottom: 36px;
+}
 
 h2 {
 	margin-top: 20px;
@@ -78,7 +80,7 @@ since it must be aligned with the content */
 
 /*** author ***/
 .author-container h1 {
-	font-size: 2.8em;
+	font-size: 2.5em;
 	margin-top: 20px;
 	margin-bottom: 0;
 	text-align: center;
@@ -123,7 +125,7 @@ footer {
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
 	.wrapper {
-		width: 744px;
+		width: 748px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
@@ -140,8 +142,13 @@ footer {
 	}
 
 	main {
-		width: 50%;
-		margin-left: 50%;
-		padding: 0;
+		width: 53%;
+		margin-left: 47%;
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		padding: 0 0 0 10px;
 	}
 }
