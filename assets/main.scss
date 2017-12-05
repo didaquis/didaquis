@@ -6,14 +6,23 @@ $anchor-text-color: #CE534D;
 $background-color: #F1EED9;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Roboto Mono', monospace;
 	color: $text-color;
 	background-color: $background-color;
 }
 
-header,
+header {
+	margin-bottom: 36px;
+	padding: 10px 14px 0 14px;
+}
+
 main {
-	padding: 0 20px;
+	margin-bottom: 36px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: -10px;
 }
 
 /*** wrapper div for both header and main ***/
@@ -37,7 +46,6 @@ a:hover {
 
 /*** main content list ***/
 .main-list-item {
-	font-weight: bold;
 	font-size: 1.2em;
 	margin: 0.8em 0;
 }
@@ -60,8 +68,8 @@ since it must be aligned with the content */
 }
 
 .logo {
-	width: 96px;
-	height: 96px;
+	width: 256px;
+	height: 256px;
 	display: inline-block;
 	background-size: cover;
 	border-radius: 50%;
@@ -72,8 +80,8 @@ since it must be aligned with the content */
 
 /*** author ***/
 .author-container h1 {
-	font-size: 2.8em;
-	margin-top: 0;
+	font-size: 2.5em;
+	margin-top: 20px;
 	margin-bottom: 0;
 	text-align: center;
 }
@@ -82,7 +90,8 @@ since it must be aligned with the content */
 .tagline-container p {
 	font-size: 1.3em;
 	text-align: center;
-	margin-bottom: 2em;
+	margin-top: 10px;
+	margin-bottom: 14px;
 }
 
 /******/
@@ -103,36 +112,26 @@ footer {
 	height: 20px;
 }
 
-.poweredby {
-	font-family: "Arial Narrow", Arial;
-	font-size: 0.6em;
-	line-height: 0.6em;
-	padding: 0 5px;
-}
-
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
 @media (min-width: 480px) {
 	/* wrapper stays 480px wide past 480px wide and is kept centered */
 	.wrapper {
 		width: 480px;
-		margin: 10% auto 0 auto;
+		margin: 6% auto 0 auto;
 	}
 }
 
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
-	/* past 768px the layout is changed and the wrapper has a fixed width of 680px
-	to accomodate both the header column and the content column */
 	.wrapper {
-		width: 680px;
+		width: 748px;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
 	aligned right */
 	header {
 		float: left;
-		width: 46%;
 		text-align: right;
 	}
 
@@ -143,8 +142,13 @@ footer {
 	}
 
 	main {
-		width: 46%;
-		margin-left: 54%;
-		padding: 0;
+		width: 53%;
+		margin-left: 47%;
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		padding: 0 0 0 10px;
 	}
 }
