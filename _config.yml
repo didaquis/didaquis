@@ -10,7 +10,7 @@ compass:
   author: "Dídac García"
   # tagline will appear under the title (optional)
   tagline: "Web developer"
-  # if include_content is true, the contents of the content.html include will be
+  # if include_content is true, the contents of the main-content.html include will be
   # added right above the generated item list, if present
   include_content: true
   # if include_analytics is true, the content of the analytics.html include will
@@ -19,6 +19,8 @@ compass:
   include_analytics: false
   description: "My name is Dídac and I'm a full stack web developer"
   location: "Barcelona - Terrassa"
+  # Twitter @username (as defined by the Twitter Card specs)
+  twitter: "didaquis"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

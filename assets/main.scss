@@ -5,24 +5,14 @@ $text-color: #46433A;
 $anchor-text-color: #CE534D;
 $background-color: #F1EED9;
 
+$space-mid-from-sides: 12px;
+$space-large-from-sides: 18px;
+$space-between-elements: 42px;
+
 body {
 	font-family: 'Roboto Mono', monospace;
 	color: $text-color;
 	background-color: $background-color;
-}
-
-header {
-	margin-bottom: 36px;
-	padding: 10px 14px 0 14px;
-}
-
-main {
-	margin-bottom: 36px;
-}
-
-/*** wrapper div for both header and main ***/
-.wrapper {
-	margin-top: 10%;
 }
 
 /*** anchor tags ***/
@@ -99,28 +89,94 @@ hr {
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
 }
 
-/*** footer ***/
-footer {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	height: 20px;
+article {
+	margin-bottom: $space-between-elements
 }
 
+h2 {
+	text-decoration: underline;
+}
+
+h3 span, h4 span {
+	color: lighten($text-color, 15%);
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+
 /*** media queries ***/
-/* X-Small devices (phones, 480px and up) */
-@media (min-width: 480px) {
-	/* wrapper stays 480px wide past 480px wide and is kept centered */
-	.wrapper {
-		width: 480px;
-		margin: 6% auto 0 auto;
+/* XX-Small devices (phones, 320px and up) */
+@media (min-width: 320px) {
+	/* content stays 320px wide past 320px wide and is kept centered */
+	.content {
+		width: 320px;
+		margin: $space-between-elements auto 0 auto;
+	}
+
+	header, main {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-large-from-sides / 2;
+		padding-right: $space-large-from-sides / 2;
+	}
+
+	.full-width-section {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-large-from-sides / 2;
+		padding-right: $space-large-from-sides / 2;
 	}
 }
 
+/* X-Small devices (phones, 360px and up) */
+@media (min-width: 360px) {
+	/* content stays 360px wide past 360px wide and is kept centered */
+	.content {
+		width: 360px;
+	}
+}
+
+/* Small devices (phones, 480px and up) */
+@media (min-width: 480px) {
+	/* content stays 480px wide past 480px wide and is kept centered */
+	.content {
+		width: 460px;
+		margin: $space-between-elements auto 0 auto;
+	}
+
+	header, main {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-large-from-sides;
+		padding-right: $space-large-from-sides;
+	}
+
+	.full-width-section {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-large-from-sides;
+		padding-right: $space-large-from-sides;
+	}
+}
+
+/* Medium devices (phones, 560px and up) */
+@media (min-width: 560px) {
+	/* content stays 560px wide past 560px wide and is kept centered */
+	.content {
+		width: 540px;
+	}
+}
+
+/* Medium devices (phones, 720px and up) */
+@media (min-width: 720px) {
+	/* content stays 720px wide past 720px wide and is kept centered */
+	.content {
+		width: 700px;
+	}
+}
+
+
 /* All other devices (768px and up) */
 @media (min-width: 768px) {
-	.wrapper {
+	.content {
 		width: 748px;
+		margin: $space-between-elements * 2 auto 0 auto;
 	}
 
 	/* the header column stays left and has a dynamic width with all contents
@@ -137,13 +193,19 @@ footer {
 	}
 
 	main {
-		width: 53%;
+		width: 50%;
 		margin-left: 47%;
 	}
-}
 
-@media (max-width: 500px) {
-	main {
-		padding: 0 10px 0 10px;
+	header, main {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-mid-from-sides;
+		padding-right: $space-mid-from-sides;
+	}
+
+	.full-width-section {
+		margin-bottom: $space-between-elements;
+		padding-left: $space-mid-from-sides;
+		padding-right: $space-mid-from-sides;
 	}
 }
