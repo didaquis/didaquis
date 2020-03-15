@@ -5,7 +5,7 @@ My own website made with Jekyll (https://jekyllrb.com) & Compass theme (Compass 
 
 ### Development:
 
-Build the site and make it available on a local server: `bundle exec jekyll serve`.
+Build the site and make it available on a local server: `bundle exec jekyll serve`  
 
 For publish on GitHub Pages just push the code on repo.
 
