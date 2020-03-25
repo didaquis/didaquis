@@ -14,4 +14,4 @@ Location: Terrassa, Spain.
 
 Published: 2017
 Language: english.
-Technology colophon: Jekyll (https://jekyllrb.com) and Compass Theme (created by Eduardo Rubio https://github.com/excentris/compass)
+Technology colophon: Next.js (https://nextjs.org) and Compass Theme (created by Eduardo Rubio https://github.com/excentris/compass)
