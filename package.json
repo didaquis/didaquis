@@ -1,19 +1,24 @@
 {
   "name": "didaquis.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "build": "next build",
     "export": "next build && next export",
+    "deploy": "npm run export && touch out/.nojekyll && gh-pages -d out",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint --ext .jsx,.js ."
   },
   "author": "Dídac García (https://didaquis.github.io/)",
+  "homepage": "https://didaquis.github.io",
   "license": "MIT",
   "dependencies": {
     "next": "9.3.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
